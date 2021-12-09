@@ -13,7 +13,7 @@
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext("2d");
         const skelly = new Image();
-        skelly.src = "assets/skelly.png";
+        skelly.src = "assets/ken.png";
 
         skelly.addEventListener("load", terminouDeCarregar);
 
@@ -27,7 +27,7 @@
         let pose = 0;
         let quadro = 0;
         const POSES = [
-        {qmax: 7, pv: 9}, 
+        {qmax: 4, pv: 9}, 
         {qmax: 7, pv: 9},
         {qmax: 7, pv: 9}, 
         {qmax: 7, pv: 9}, 
@@ -69,7 +69,7 @@
 
             ctx.drawImage(skelly,
             //sx, sy, sw, sh
-               Math.floor(quadro)*64, pose*64, 64, 64,
+               Math.floor(quadro)*64, pose*64, 80, 80,
             //dx, dy, dw, dh
                0, 0, 64, 64);
 
